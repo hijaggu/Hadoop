@@ -1,0 +1,14 @@
+http://localhost:50070
+
+docker exec -it hadoop-dotnet-master bash
+
+docker cp dotnetcore/input hadoop-dotnet-master:/dotnetcore/input
+
+
+hadoop fs -put /dotnetcore/input /input
+
+hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-2.7.2.jar \
+-files "/dotnetcore" \
+-mapper "dotnet dotnetcore/Mapper.dll" \
+-reducer  "dotnet dotnetcore/Reducer.dll" \
+-input /input/* -output /output

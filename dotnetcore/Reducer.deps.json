@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.0",
+    "signature": "7c3aac745760655a05c8ec92e1ae5ef3655d91a2"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.0": {
+      "Reducer/1.0.0": {
+        "dependencies": {
+          "CsvHelper": "2.16.3"
+        },
+        "runtime": {
+          "Reducer.dll": {}
+        }
+      },
+      "CsvHelper/2.16.3": {
+        "runtime": {
+          "lib/netstandard1.3/CsvHelper.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Reducer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CsvHelper/2.16.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RTxNM9Q6MDg3WpGorrK7E9eXsjGhtDLYx5dBuHol5kHDpu7kND2NveHDVCFQgGxowuDB57ettaOEn3EJqiJ1oQ=="
+    }
+  }
+}
